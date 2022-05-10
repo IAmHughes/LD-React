@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import redCircle from "./red-circle.png";
+import greenCircle from "./green-circle.png";
+import "./App.css";
+import { withLDProvider, useFlags } from "launchdarkly-react-client-sdk";
 
 function App() {
+  const { trafficLight } = useFlags();
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>Just wanted to test out some LaunchDarkly Feature Flags! </p>
+        <p>The flag is {trafficLight ? "on" : "off"}!</p>
+        <img src={trafficLight ? greenCircle : redCircle} alt="circle" />
       </header>
     </div>
   );
 }
 
-export default App;
+export default withLDProvider({
+  clientSideID: "627914d155909914cfbf981b",
+  options: {
+    bootstrap: "localStorage",
+  },
+})(App);
