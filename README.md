@@ -27,7 +27,7 @@ In order to test this repostiory out locally, you can follow the following steps
 
 _Note: The React SDK uses the `Client-side ID`, not the `SDK key` or the `Mobile key`._
 
-5. Ensure your terminal is in the root directory of the project and run `npm install` to install the repository dependencies, including the `LaunchDarkly React SDK`.
+5. Ensure your terminal is in the root directory of the project and run `npm install` to install the repository dependencies, including the [`LaunchDarkly React SDK`](https://docs.launchdarkly.com/sdk/client-side/react/react-web).
 6. Ensure your changes are saved, then run `npm start`
 7. Open your browser to [localhost:3000](http://localhost:3000/)
 8. You should notice the text stating "The flag is off" and a red circle below.
