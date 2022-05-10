@@ -1,6 +1,6 @@
 # LD-React
 
-Simple app from `create-react-app` modified to showcase a red light / green light Feature Flag setup with LaunchDarkly. This can be further enhanced by leveraging [targetting](https://docs.launchdarkly.com/home/flags/targeting-users) and a more compelling feature to easily do A/B testing, send specific users through specific code paths, etc.
+Simple app from `create-react-app` modified to showcase a red light / green light Feature Flag setup with LaunchDarkly. This can be further enhanced by leveraging [targeting](https://docs.launchdarkly.com/home/flags/targeting-users) and a more compelling feature to easily do A/B testing, send specific users through specific code paths, etc.
 
 ![red-light-green-light-example](https://user-images.githubusercontent.com/2894107/167528620-b0a1f997-6f8d-410f-a554-7825a215a4f0.gif)
 
