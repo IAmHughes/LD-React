@@ -27,7 +27,8 @@ In order to test this repostiory out locally, you can follow the following steps
 
 _Note: The React SDK uses the `Client-side ID`, not the `SDK key` or the `Mobile key`._
 
-5. Ensure everything is saved, then ensure your terminal is in the root directory of the project and run `npm start`
-6. Open your browser to [localhost:3000](http://localhost:3000/)
-7. You should notice the text stating "The flag is off" and a red circle below.
-8. From your [LaunchDarkly Feature Flag Dashboard](https://app.launchdarkly.com/default/production/features) toggle the flag on and save your changes in the pop-up that appears. Note the app now has the text "The flag is on" and a green circle below.
+5. Ensure your terminal is in the root directory of the project and run `npm install` to install the repository dependencies, including the `LaunchDarkly React SDK`.
+6. Ensure your changes are saved, then run `npm start`
+7. Open your browser to [localhost:3000](http://localhost:3000/)
+8. You should notice the text stating "The flag is off" and a red circle below.
+9. From your [LaunchDarkly Feature Flag Dashboard](https://app.launchdarkly.com/default/production/features) toggle the flag on and save your changes in the pop-up that appears. Note the app now has the text "The flag is on" and a green circle below.
